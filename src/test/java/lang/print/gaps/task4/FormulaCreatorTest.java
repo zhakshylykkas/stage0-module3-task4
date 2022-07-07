@@ -19,7 +19,13 @@ class FormulaCreatorTest {
         List<String> strings = Files.readAllLines(path);
         List<String> castedRows = strings.stream()
                 .filter(line ->
-                        line.contains("(9 * Math.pow(a, 2) - 5 * b + 2 + a - 7) * ((a + b - 4 * a * b) / 2)"))
+                        line.contains("(9 * Math.pow(a, 2) - 5 * b + 2 + a - 7) * ((a + b - 4 * a * b) / 2)") ||
+                        line.contains("(9 * Math.pow(a, 2) - 5 * b + 2 + a - 7) * (a + b - 4 * a * b) / 2") ||
+                        line.contains("(9 * a * a - 5 * b + 2 + a - 7) * ((a + b - 4 * a * b) / 2)") ||
+                        line.contains("(9 * (a ^ 2) - 5 * b + 2 + a - 7) * ((a + b - 4 * a * b) / 2)") ||
+                        line.contains("(9 * (a * a) - 5 * b + 2 + a - 7) * ((a + b - 4 * a * b) / 2)") ||
+                        line.contains("(9*Math.pow(a, 2) - 5*b + 2 + a - 7) * ((a + b - 4*a*b) / 2)") ||
+                        line.contains("(9 * a * a - 5 * b + 2 + a - 7) * (a + b - 4 * a * b) / 2)"))
                 .collect(Collectors.toList());
 
         assertEquals(1, castedRows.size());
