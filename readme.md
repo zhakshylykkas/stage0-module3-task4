@@ -1,9 +1,9 @@
-
 ## Tasks:
+
 #### 1) Types setting.
+
 Complete the code snippet below with corresponding types. Each var type should consume as less
 as possible e.g.: 2345 - suits to short. Code snippet:
-
 
         public class SettingTypes {
             public static void main(String[] args) {
@@ -18,22 +18,21 @@ as possible e.g.: 2345 - suits to short. Code snippet:
         }
 
 #### 2) Int representation.
+
 Print chars :'c', 'h', 'a', 'r' using int representation. Implement program in the following code
 snippet:
-
 
         public class IntRepresentation {
             public static void main(String[] args) {
             }
         }
 
-
 #### 3) Formula.
+
 Declare all necessary variables and write down the formula using corresponding names
 (declare those vars before the formula):
-![img_26.png](https://github.com/Andrekukshinov/contribution_for_epam_mjc/blob/master/goal/basicSyntax/img_26.png?raw=true)
+![img_19.png](https://github.com/mjc-school/MJC-School/blob/main/stage%20%230/module%20%233.%20Java%20Lang%20Syntax/img/img_19.png?raw=true)
 Implement program using the following code snippet:
-
 
     public class FormulaCreator {
         public static void main(String[] args) {
